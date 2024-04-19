@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ET Gift Card Balance</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       header {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin-bottom: 20px;
+    height: 100px; /* Set a fixed height for vertical alignment */
+}
+
+        .reset-button {
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Congrats On The New Job</h1>
+        
+    </header>
+    <div class="container">
+        <div class="credit-card">
+            <!-- First image (hi.jpg) -->
+            <img src="hi.jpg" alt="Credit Card Image">
+            <!-- Second image (cha.png) -->
+            <img src="cha.png" alt="Another Image">
+        </div>
+        <div class="balance">Balance: <span id="balanceAmount">100</span></div>
+        <div class="entry">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" min="0">
+            <button onclick="updateBalance()">Submit</button>
+        </div>
+        <div id="log"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

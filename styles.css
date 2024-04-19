@@ -1,0 +1,60 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Added to prevent images from overflowing */
+}
+
+.credit-card {
+    display: flex; /* Added to make images appear side by side */
+    align-items: center; /* Added for vertical alignment */
+    justify-content: space-between; /* Added for spacing between images and balance */
+    padding-bottom: 20px; /* Added padding to bottom of .credit-card */
+}
+
+.credit-card img {
+    max-width: 45%; /* Adjust the size of the images as needed */
+}
+
+.balance {
+    flex-grow: 1; /* Added to allow balance to take remaining space */
+    text-align: left; /* Align balance to the left */
+    font-size: 24px; /* Larger font size for balance */
+    font-weight: bold; /* Bold font weight for balance */
+}
+
+.entry {
+    margin-top: 20px; /* Added margin to top of .entry */
+}
+
+.entry label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.entry input {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.entry button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#log {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#log p {
+    margin: 5px 0;
+}
